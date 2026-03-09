@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+﻿ <!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
     <head>
@@ -69,33 +69,33 @@
 				});
 				
 				monaco.editor.defineTheme('net-theme-dark', {
-					base: 'vs-dark',
-					inherit: true,
-					rules: [
-					  { token: 'identifier', foreground: '61adff' },
-					  { token: 'operator', foreground: '61adff' },
-						{ token: 'global', foreground: '61adff' },
-						{ token: 'keyword', foreground: '0b4be6' },
-						{ token: 'comment', foreground: '999999' },
-						{ token: 'number', foreground: '61adff' },
-						{ token: 'string', foreground: '61adff' },
-						{ token: 'delimiter', foreground: '61adff' },
-					],
-					colors: {
-	'editor.background': '#0C0C0C',
-	'editor.lineHighlightBackground': '#323232',
-	'editorGutter.background': '#0C0C0C',
-	'editor.selectionBackground': '#919090',
-	'editor.foreground' : '#ffffff',
-	'editorCursor.foreground': '#b3b1b1',
-	'editorLineNumber.foreground': '#b5b3b3',        // normal lines
-  'editorLineNumber.activeForeground': '#d4d2d2',  // current line
-  'editorSuggestWidget.background': '#3d3d3d',
-  'editorSuggestWidget.foreground': '#ffffff',
-  'editorSuggestWidget.selectedBackground': '#2a2a40',
-  'editorSuggestWidget.highlightForeground': '#002f5e',
-  'editorSuggestWidget.border': '#002f5e'
-}
+    base: 'vs-dark',
+    inherit: true,
+    rules: [
+        { token: 'identifier',  foreground: 'e0e0e0' },  // Soft white — neutral base
+        { token: 'operator',    foreground: '89d4f5' },  // Ice blue — clean, readable
+        { token: 'global',      foreground: 'c792ea' },  // Violet — stands out from identifiers
+        { token: 'keyword',     foreground: '5b9cf6' },  // Bright blue — pops without being harsh
+        { token: 'comment',     foreground: '546e7a' },  // Muted slate — clearly secondary
+        { token: 'number',      foreground: 'f78c6c' },  // Soft orange — instantly distinct
+        { token: 'string',      foreground: 'a5e075' },  // Muted green — classic, readable
+        { token: 'delimiter',   foreground: '7c8fa6' },  // Desaturated blue-grey — recedes naturally
+    ],
+    colors: {
+        'editor.background':                    '#0C0C0C',
+        'editor.lineHighlightBackground':       '#1a1a1a',
+        'editorGutter.background':              '#0C0C0C',
+        'editor.selectionBackground':           '#2d4a6e',
+        'editor.foreground':                    '#e0e0e0',
+        'editorCursor.foreground':              '#89d4f5',
+        'editorLineNumber.foreground':          '#3d5060',
+        'editorLineNumber.activeForeground':    '#7c8fa6',
+        'editorSuggestWidget.background':       '#131313',
+        'editorSuggestWidget.foreground':       '#e0e0e0',
+        'editorSuggestWidget.selectedBackground':'#1e3150',
+        'editorSuggestWidget.highlightForeground': '#89d4f5',
+        'editorSuggestWidget.border':           '#1e3150'
+    }
 				});
 				
 				editor = monaco.editor.create(document.getElementById('container'), {
